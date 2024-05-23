@@ -1,0 +1,59 @@
+.Register {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  max-height: 400px;
+  max-width: 25rem;
+  background-color: #94bbe9;
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Register h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 95%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.register-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.register-button:hover {
+  background-color: orangered;
+  transform: scale(1.05);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}

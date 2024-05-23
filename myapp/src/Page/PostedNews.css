@@ -1,0 +1,86 @@
+.posted-news-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.posted-news-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.news-list {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.news-item {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(33.333% - 40px);
+  box-sizing: border-box;
+}
+
+.news-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.news-meta {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+
+.news-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.news-buttons button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.news-buttons button:hover {
+  background-color: #45a049;
+}
+
+.news-buttons button.delete {
+  background-color: #f44336;
+}
+
+.news-buttons button.delete:hover {
+  background-color: #d32f2f;
+}
+
+@media (max-width: 900px) {
+  .news-item {
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .news-item {
+    width: 100%;
+  }
+}
