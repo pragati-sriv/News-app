@@ -23,7 +23,6 @@ const PostedNews = () => {
               <p>{newsItem.description}</p>
               <p>{newsItem.content}</p>
               <div className="news-meta">
-                <span>Posted By: {newsItem.postedBy}</span>
                 <span>On: {newsItem.date}</span>
               </div>
               <div className="news-buttons">
